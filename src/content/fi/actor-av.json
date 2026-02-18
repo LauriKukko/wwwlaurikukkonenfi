@@ -1,0 +1,13 @@
+{
+  "tableTitle": "ELOKUVA-, TV- JA MAINOSROOLIT",
+  "columns": ["Tuotantoyhtiö", "Produktio", "Rooli", "Ohjaaja", "Vuosi", "Tyyppi"],
+  "rows": [
+    ["Woodpecker", "Gigantti / Gigantti 25v. Markku on tyhmä", "Markku", "Juho Konstig", "2024", "Mainos"],
+    ["Pictures Helsinki", "LähiTapiola / Grande Finale", "Isä", "Pekka Hara", "2024", "Mainos"],
+    ["Scan Office", "Mitsubishi Electric ilmanvaihtolaite", "", "", "2020", "Mainos"],
+    ["YLE TV2", "Tehdas", "Jaakko", "Matti Ijäs, Juha Rosma, Jarmo Lampela", "2013", "TV-sarja"],
+    ["YLE TV2", "Pikkukakkonen - Ota Banaani!", "Törmäilijä", "Rami Saarijärvi", "2010", "TV-sarja"],
+    ["Artista Filmi", "Täällä pohjantähden alla II", "Juhani Koskela", "Timo Koivusalo", "2008", "Elokuva"],
+    ["Helsinki-Filmi", "Kielletty hedelmä", "Markku", "Dome Karukoski", "2008", "Elokuva"]
+  ]
+}

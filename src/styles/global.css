@@ -1,0 +1,222 @@
+/* ── Global Reset & Theme ── */
+:root {
+  --bg-primary: #0a0a0f;
+  --bg-secondary: #0d0d1a;
+  --bg-panel: #111122;
+  --text-primary: #00ff88;
+  --text-secondary: #15ff00;
+  --text-dim: #447766;
+  --text-white: #d0d0d0;
+  --neon-cyan: #00e5ff;
+  --neon-darkgreen: #22c104;
+  --neon-green: #39ff14;
+  --neon-blue: #0066ff;
+  --neon-magenta: #ff00ff;
+  --border-color: #064400;
+  --border-glow: #3cff0044;
+  --font-mono: "IBM Plex Mono", "Share Tech Mono", "Courier New", monospace;
+  --scanline-opacity: 0.03;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: none !important;
+}
+
+/* ── Fullscreen Crosshair Cursor ── */
+#crosshair-h, #crosshair-v {
+  position: fixed;
+  background: var(--neon-green);
+  pointer-events: none;
+  z-index: 9998;
+  opacity: 0.35;
+  mix-blend-mode: screen;
+}
+
+#crosshair-h {
+  left: 0;
+  width: 100%;
+  height: 1px;
+  box-shadow: 0 0 4px var(--neon-green);
+}
+
+#crosshair-v {
+  top: 0;
+  height: 100%;
+  width: 1px;
+  box-shadow: 0 0 4px var(--neon-green);
+}
+
+/* Hide crosshair on touch devices */
+@media (hover: none) {
+  #crosshair-h, #crosshair-v { display: none; }
+  *, *::before, *::after { cursor: auto; }
+}
+
+/* ── Language Toggle ── */
+.lang-toggle {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  z-index: 9000;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  background: rgba(17, 17, 34, 0.85);
+  border: 1px solid var(--border-color);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  overflow: hidden;
+}
+
+.lang-toggle-btn {
+  background: transparent;
+  border: none;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+  cursor: none;
+  transition: all 0.2s ease;
+  color: var(--text-dim);
+}
+
+.lang-toggle-btn:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.lang-toggle-btn.active-fi {
+  color: var(--neon-magenta);
+  text-shadow: 0 0 8px var(--neon-magenta), 0 0 16px rgba(255, 0, 255, 0.3);
+}
+
+.lang-toggle-btn.active-en {
+  color: #ffdd00;
+  text-shadow: 0 0 8px #ffdd00, 0 0 16px rgba(255, 221, 0, 0.3);
+}
+
+.lang-toggle-sep {
+  color: var(--border-color);
+  font-size: 11px;
+  user-select: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-mono);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  min-height: 100vh;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* CRT scanline overlay */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, var(--scanline-opacity)) 2px,
+    rgba(0, 0, 0, var(--scanline-opacity)) 4px
+  );
+}
+
+a {
+  color: var(--neon-green);
+  text-decoration: none;
+}
+
+a:hover {
+  text-shadow: 0 0 8px var(--neon-green);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--neon-green);
+}
+
+/* ── Shared Utilities ── */
+.screen-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+}
+
+.panel {
+  background: var(--bg-panel);
+  border: 1px solid var(--border-color);
+  box-shadow:
+    0 0 15px var(--border-glow),
+    inset 0 0 30px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  max-width: 900px;
+  width: 100%;
+}
+
+.panel-header {
+  background: var(--neon-blue);
+  color: #ffffff;
+  padding: 6px 16px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin: -30px -30px 20px -30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.blink {
+  animation: blink-anim 1s step-end infinite;
+}
+
+@keyframes blink-anim {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .panel {
+    padding: 16px;
+  }
+  .panel-header {
+    margin: -16px -16px 16px -16px;
+    font-size: 12px;
+  }
+}

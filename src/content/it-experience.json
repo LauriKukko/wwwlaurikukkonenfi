@@ -1,0 +1,30 @@
+{
+  "tableTitle": "WORK EXPERIENCE",
+  "columns": ["Period", "Role", "Company", "Description"],
+  "rows": [
+    [
+      "12/2022 – present",
+      "Bus & Technology Delivery Specialist",
+      "Accenture",
+      "Work in teams responsible for developing and maintaining legacy systems; coordinate small projects, manage stakeholder and vendor communication, specify requirements, and support testing and issue resolution. Regular collaboration with developers on implementation and debugging."
+    ],
+    [
+      "12/2021 – 12/2022",
+      "Bus & Technology Delivery Senior Analyst",
+      "Accenture",
+      "Led small delivery efforts, supported cross-team communication and legacy platform operations."
+    ],
+    [
+      "3/2021 – 12/2021",
+      "Business Analyst",
+      "Accenture",
+      ""
+    ],
+    [
+      "8/2019 – 3/2021",
+      "IT Consultant",
+      "Academic Work",
+      ""
+    ]
+  ]
+}

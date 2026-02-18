@@ -1,0 +1,56 @@
+{
+  "en": {
+    "landing": {
+      "welcome": "Welcome to my site.",
+      "prompt": "Press ENTER to continue",
+      "hint": "System ready. Awaiting operator input...",
+      "easterEggTitle": "\u2588 CLASSIFIED TRANSMISSION \u2588",
+      "easterEggP1": "Congratulations, operator. You have bypassed the standard entry protocol and accessed a restricted channel.",
+      "easterEggP2": "You are now initiated into the mysteries of the mainframe. Few have found this path. The system acknowledges your curiosity.",
+      "easterEggP3": "Welcome to the inner grid. The neon flows through you now.",
+      "easterEggContinue": "Press CTRL again to proceed to Main Menu >"
+    },
+    "menu": {
+      "titleBar": "ISPF PRIMARY OPTION MENU",
+      "heading": "LAURI KUKKONEN \u2014 MAIN MENU",
+      "subheading": "Select one of the following options:",
+      "commandLabel": "Command ===>",
+      "footer": "Enter a number (1-4) or click an option above.",
+      "items": ["About Me", "IT Career", "Actor", "Photography"]
+    },
+    "content": {
+      "sectionPrefix": "SECTION",
+      "backButton": "< RETURN TO MAIN MENU",
+      "galleryLabel": "PHOTO GALLERY",
+      "loadingFeed": "Loading gallery...",
+      "feedError": "Could not load gallery:"
+    }
+  },
+  "fi": {
+    "landing": {
+      "welcome": "Tervetuloa sivuilleni.",
+      "prompt": "Paina ENTER jatkaaksesi",
+      "hint": "J\u00e4rjestelm\u00e4 valmis. Odotetaan operaattorin sy\u00f6tett\u00e4...",
+      "easterEggTitle": "\u2588 SALATTU L\u00c4HETYS \u2588",
+      "easterEggP1": "Onnittelut, operaattori. Olet ohittanut vakioprotokollat ja p\u00e4\u00e4ssyt rajoitetulle kanavalle.",
+      "easterEggP2": "Sinut on nyt vihitty mainframen mysteereihin. Harvat ovat l\u00f6yt\u00e4neet t\u00e4m\u00e4n polun. J\u00e4rjestelm\u00e4 tunnustaa uteliaisuutesi.",
+      "easterEggP3": "Tervetuloa sis\u00e4iseen verkkoon. Neon virtaa sinussa nyt.",
+      "easterEggContinue": "Paina CTRL uudelleen siirtyäksesi päävalikkoon >"
+    },
+    "menu": {
+      "titleBar": "ISPF P\u00c4\u00c4VALIKKO",
+      "heading": "LAURI KUKKONEN \u2014 P\u00c4\u00c4VALIKKO",
+      "subheading": "Valitse yksi seuraavista vaihtoehdoista:",
+      "commandLabel": "Komento ===>",
+      "footer": "Sy\u00f6t\u00e4 numero (1-4) tai klikkaa vaihtoehtoa yll\u00e4.",
+      "items": ["Tietoa minusta", "IT-ura", "N\u00e4yttelij\u00e4", "Valokuvaus"]
+    },
+    "content": {
+      "sectionPrefix": "OSIO",
+      "backButton": "< TAKAISIN P\u00c4\u00c4VALIKKOON",
+      "galleryLabel": "VALOKUVAGALLERIA",
+      "loadingFeed": "Ladataan galleriaa...",
+      "feedError": "Gallerian lataus ep\u00e4onnistui:"
+    }
+  }
+}

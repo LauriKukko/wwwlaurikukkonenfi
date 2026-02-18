@@ -1,0 +1,113 @@
+/* ── Instagram Carousel ── */
+.carousel-container {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.carousel-label {
+  color: var(--text-dim);
+  font-size: 13px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 8px;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  background: #111020;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  position: relative;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 900px;
+  object-fit: contain;
+  /*display: block;*/
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.85));
+  color: var(--text-neon-green);
+  padding: 20px 16px 12px;
+  font-size: 13px;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid var(--border-color);
+  color: var(--neon-cyan);
+  font-size: 24px;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: all 0.15s;
+  font-family: var(--font-mono);
+}
+
+.carousel-btn:hover {
+  background: rgba(0, 229, 255, 0.15);
+  box-shadow: 0 0 10px var(--neon-cyan);
+}
+
+.carousel-btn-prev {
+  left: 8px;
+}
+.carousel-btn-next {
+  right: 8px;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  padding: 12px 0;
+}
+
+.carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--border-color);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  padding: 0;
+}
+
+.carousel-dot.active {
+  background: var(--neon-cyan);
+  box-shadow: 0 0 6px var(--neon-cyan);
+}
+
+@media (max-width: 600px) {
+  .carousel-slide img {
+    height: auto;
+  }
+  .carousel-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+}

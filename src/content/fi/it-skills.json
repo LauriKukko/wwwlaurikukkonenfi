@@ -1,0 +1,18 @@
+{
+  "tableTitle": "TAIDOT JA VAHVUUDET",
+  "columns": ["Kategoria", "Tiedot"],
+  "rows": [
+    [
+      "Teknologiat ja työkalut",
+      "Java, Mainframe (COBOL, PL/I, z/OS, DB2), MSSQL, PostgreSQL, IBM Optim, Git, GitLab, Jira, GCP, Python, Linux, generatiiviset tekoälytyökalut"
+    ],
+    [
+      "Ydinvahvuudet",
+      "Hyvä ihmisten kanssa, Nopea kokonaiskuvan hahmotus, Oppimishaluinen, Luova ajattelu, Proaktiivinen, Mukautuvainen ja reaktiivinen"
+    ],
+    [
+      "Kielet",
+      "Suomi (äidinkieli), Englanti (sujuva), Saksa (keskitaso), Ruotsi (perusteet)"
+    ]
+  ]
+}

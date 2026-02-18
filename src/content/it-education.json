@@ -1,0 +1,17 @@
+{
+  "tableTitle": "EDUCATION & CERTIFICATES",
+  "columns": ["Year", "Qualification", "Institution"],
+  "rows": [
+    ["2019", "Java Fullstack Developer Bootcamp", "AW Academy, Espoo"],
+    ["2011", "Master of Arts, Actor", "Tampere University"],
+    ["2009", "Bachelor of Arts, Actor", "Tampere University"]
+  ],
+  "extraSection": {
+    "title": "CERTIFICATES",
+    "items": [
+      "AZ-900 Azure — Microsoft",
+      "PSM1 — Scrum.org",
+      "SAFe 6 Scrum Master"
+    ]
+  }
+}

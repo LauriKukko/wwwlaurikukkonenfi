@@ -1,0 +1,30 @@
+{
+  "tableTitle": "TYÖKOKEMUS",
+  "columns": ["Ajanjakso", "Rooli", "Yritys", "Kuvaus"],
+  "rows": [
+    [
+      "12/2022 – nykyinen",
+      "Bus & Technology Delivery Specialist",
+      "Accenture",
+      "Työskentelee tiimeissä, jotka vastaavat vanhojen järjestelmien kehittämisestä ja ylläpidosta; koordinoi pieniä projekteja, hallinnoi sidosryhmä- ja toimittajaviestintää, määrittelee vaatimuksia sekä tukee testausta ja ongelmien ratkaisua. Säännöllistä yhteistyötä kehittäjien kanssa toteutuksessa ja vianmäärityksessä."
+    ],
+    [
+      "12/2021 – 12/2022",
+      "Bus & Technology Delivery Senior Analyst",
+      "Accenture",
+      "Johti pieniä toimituskokonaisuuksia, tuki tiimien välistä viestintää ja vanhojen alustojen operointia."
+    ],
+    [
+      "3/2021 – 12/2021",
+      "Business Analyst",
+      "Accenture",
+      ""
+    ],
+    [
+      "8/2019 – 3/2021",
+      "IT-konsultti",
+      "Academic Work",
+      ""
+    ]
+  ]
+}

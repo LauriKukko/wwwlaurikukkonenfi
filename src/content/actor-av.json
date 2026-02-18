@@ -1,0 +1,69 @@
+{
+  "tableTitle": "FILM, TV & COMMERCIAL ROLES",
+  "columns": [
+    "Production Company",
+    "Production",
+    "Role",
+    "Director",
+    "Year",
+    "Type"
+  ],
+  "rows": [
+    [
+      "Woodpecker",
+      "Gigantti / Gigantti 25v. Markku on tyhmä",
+      "Markku",
+      "Juho Konstig",
+      "2024",
+      "Commercial"
+    ],
+    [
+      "Pictures Helsinki",
+      "LähiTapiola/ Grande Finale",
+      "Father",
+      "Pekka Hara",
+      "2024",
+      "Commercial"
+    ],
+    [
+      "Scan Office",
+      "Mitsubishi Electric ilmanvaihtolaite",
+      "",
+      "",
+      "2020",
+      "Commercial"
+    ],
+    [
+      "YLE TV2",
+      "Tehdas",
+      "Jaakko",
+      "Matti Ijäs, Juha Rosma, Jarmo Lampela",
+      "2013",
+      "TV series"
+    ],
+    [
+      "YLE TV2",
+      "Pikkukakkonen - Ota Banaani!",
+      "Törmäilijä",
+      "Rami Saarijärvi",
+      "2010",
+      "TV series"
+    ],
+    [
+      "Artista Filmi",
+      "Täällä pohjantähden alla II",
+      "Juhani Koskela",
+      "Timo Koivusalo",
+      "2008",
+      "Film"
+    ],
+    [
+      "Helsinki-Filmi",
+      "Kielletty hedelmä",
+      "Markku",
+      "Dome Karukoski",
+      "2008",
+      "Film"
+    ]
+  ]
+}

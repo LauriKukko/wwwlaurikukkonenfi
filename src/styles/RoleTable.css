@@ -1,0 +1,169 @@
+/* ── Role Tables (Actor Page) ── */
+.role-tables-section {
+  margin-top: 36px;
+}
+
+.role-table-block {
+  margin-bottom: 40px;
+}
+
+.role-table-title {
+  color: var(--neon-green);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border-color);
+  text-shadow: 0 0 8px rgba(43, 255, 0, 0.3);
+}
+
+.role-table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.role-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  min-width: 600px;
+}
+
+.role-table thead th {
+  background: rgba(60, 255, 0, 0.226);
+  color: var(--neon-green);
+  font-weight: 700;
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 2px solid var(--border-color);
+  white-space: nowrap;
+  letter-spacing: 0.5px;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.role-table tbody tr {
+  border-bottom: 1px solid rgba(14, 68, 0, 0.4);
+  transition: background 0.15s ease;
+}
+
+.role-table tbody tr:hover {
+  background: rgba(9, 255, 0, 0.04);
+}
+
+.role-table tbody tr:nth-child(even) {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.role-table tbody tr:nth-child(even):hover {
+  background: rgba(21, 255, 0, 0.06);
+}
+
+.role-table tbody td {
+  color: var(--text-white);
+  padding: 8px 12px;
+  vertical-align: top;
+}
+
+/* Highlight the role column */
+.role-table tbody td:nth-child(3) {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+/* Year column - right align */
+.role-table thead th:last-child,
+.role-table tbody td:last-child {
+  text-align: center;
+}
+
+/* Type badge for AV table */
+.role-type-badge {
+  display: inline-block;
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 2px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.role-type-badge--film {
+  background: rgba(0, 255, 64, 0.15);
+  color: var(--neon-green);
+  border: 1px solid rgba(0, 255, 21, 0.3);
+}
+
+.role-type-badge--tv {
+  background: rgba(57, 255, 20, 0.1);
+  color: var(--neon-green);
+  border: 1px solid rgba(57, 255, 20, 0.25);
+}
+
+.role-type-badge--commercial {
+  background: rgba(255, 0, 255, 0.1);
+  color: var(--neon-magenta);
+  border: 1px solid rgba(255, 0, 255, 0.25);
+}
+
+/* Responsive: scroll hint */
+.role-table-scroll-hint {
+  display: none;
+  color: var(--text-dim);
+  font-size: 11px;
+  margin-bottom: 6px;
+  opacity: 0.6;
+}
+
+/* ── Extra Section (Certificates etc.) ── */
+.role-extra-section {
+  margin-top: 20px;
+  padding: 16px;
+  border: 1px solid var(--border-color);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.role-extra-title {
+  color: var(--neon-green);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-shadow: 0 0 6px rgba(43, 255, 0, 0.3);
+}
+
+.role-extra-list {
+  list-style: none;
+  padding: 0;
+}
+
+.role-extra-item {
+  color: var(--text-white);
+  font-size: 13px;
+  padding: 4px 0;
+  padding-left: 16px;
+  position: relative;
+}
+
+.role-extra-item::before {
+  content: '>';
+  position: absolute;
+  left: 0;
+  color: var(--neon-green);
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .role-table-scroll-hint {
+    display: block;
+  }
+  .role-table {
+    font-size: 12px;
+  }
+  .role-table thead th,
+  .role-table tbody td {
+    padding: 6px 8px;
+  }
+}

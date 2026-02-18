@@ -1,0 +1,18 @@
+{
+  "tableTitle": "SKILLS & STRENGTHS",
+  "columns": ["Category", "Details"],
+  "rows": [
+    [
+      "Technologies & Tools",
+      "Java, Mainframe (COBOL, PL/I, z/OS, DB2), MSSQL, PostgreSQL, IBM Optim, Git, GitLab, Jira, GCP, Python, Linux, Generative AI tools"
+    ],
+    [
+      "Core Strengths",
+      "Good with people, Quick grasp of the big picture, Eager to learn, Creative thinking, Proactive, Adaptive and reactive"
+    ],
+    [
+      "Languages",
+      "Finnish (native), English (fluent), German (intermediate), Swedish (basic)"
+    ]
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "tableTitle": "THEATRE ROLES",
+  "columns": ["Theatre", "Production", "Role", "Director / Choreographer", "Year"],
+  "rows": [
+    ["Vaasan KT", "Älä pukeudu päivälliselle", "Petri", "Miika Muranen", "2018"],
+    ["Vaasan KT", "Liian paksu perhoseksi", "Viljami Hartikka, rva Ojanen", "Miika Muranen", "2018"],
+    ["Vaasan KT", "Billy Elliot", "George", "Jakob Höglund / Ida Jousmäki", "2017"],
+    ["Vaasan KT", "Peter Pan", "Hoikka", "Jakob Höglund", "2017"],
+    ["Vaasan KT", "Niinkuin taivaassa", "Tony", "Fiikka Forsman", "2016"],
+    ["Vaasan KT", "Saman katon alla", "Matias", "Erik Kiviniemi", "2016"],
+    ["Vaasan KT", "Kuka pelkää Virginia Woolfia", "Nick", "Erik Kiviniemi", "2016"],
+    ["Vaasan KT", "Espanjankärpänen", "Erkki Linna", "Jakob Höglund / Oula Kitti", "2015"],
+    ["Vaasan KT", "John Wikströmin elämä", "Hauhia", "Erik Kiviniemi", "2015"],
+    ["Vaasan KT", "Viidakkokirja", "Baloo", "Jakob Höglund / Oula Kitti", "2015"],
+    ["Vaasan KT", "Tarkastaja", "Markus Kultasade", "Erik Kiviniemi", "2014"],
+    ["Vaasan KT", "Badding - rokkiin ja takaisin", "Rafe", "Fiikka Forsman", "2014"],
+    ["Hämeenlinnan teatteri", "Kersantti Karoliina -musikaali", "Alikessu", "Heikki Paavilainen", "2014"],
+    ["Hämeenlinnan teatteri", "Kuningas näyttämöllä", "Tuomas Sepänpoika", "Antti Mikkola", "2013"],
+    ["Hämeenlinnan teatteri", "Pojat - musikaali", "Pate", "Snoopi Siren / Riia Kivimäki", "2013"],
+    ["Hämeenlinnan teatteri", "Ruostetta ja timantteja", "Niko", "Hannu-Matti Tyhtilä", "2013"],
+    ["Hämeenlinnan teatteri", "Perheistä parhain", "Roope", "Pentti Järvinen", "2012"],
+    ["Hämeenlinnan teatteri", "Kaunotar ja Hirviö", "Hirviö", "Reija Isosuo", "2012"],
+    ["Hämeenlinnan teatteri", "Delilah-musikaali", "Jim", "Tiina Brönnare", "2012"],
+    ["Törnävän kesäteatteri", "Häjyt", "Stig Nenonen", "Sarianne Paasonen", "2012"],
+    ["Törnävän kesäteatteri", "Peppi Pitkätossu", "rva. Ryöppyvaara", "Viivi Saarela / Timo Saari", "2012"],
+    ["Hämeenlinnan teatteri", "Älä pukeudu päivälliselle", "Bertrand", "Heikki Paavilainen", "2011"],
+    ["Turun Nuori Teatteri", "1827 - the Infernal Musical", "Elias Hellman", "J-P Mikkola / Mikko Kaikkonen", "2011"],
+    ["Pyynikin kesäteatteri", "Häräntappoase", "Touko Mäkelin", "Marika Vapaavuori / Ari Numminen", "2010"]
+  ]
+}

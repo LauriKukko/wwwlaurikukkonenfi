@@ -1,0 +1,17 @@
+{
+  "tableTitle": "KOULUTUS JA SERTIFIKAATIT",
+  "columns": ["Vuosi", "Tutkinto", "Oppilaitos"],
+  "rows": [
+    ["2019", "Java Fullstack Developer Bootcamp", "AW Academy, Espoo"],
+    ["2011", "Teatteritaiteen maisteri, näyttelijäntyö", "Tampereen yliopisto"],
+    ["2009", "Teatteritaiteen kandidaatti, näyttelijäntyö", "Tampereen yliopisto"]
+  ],
+  "extraSection": {
+    "title": "SERTIFIKAATIT",
+    "items": [
+      "AZ-900 Azure — Microsoft",
+      "PSM1 — Scrum.org",
+      "SAFe 6 Scrum Master"
+    ]
+  }
+}

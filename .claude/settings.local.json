@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(npx react-scripts build:*)",
+      "Bash(python:*)",
+      "Bash(pip install:*)",
+      "Bash(dir /s /b /o:-d \"C:\\\\Users\\\\lauri\\\\AppData\\\\Local\\\\Temp\\\\*.png\" \"C:\\\\Users\\\\lauri\\\\AppData\\\\Local\\\\Temp\\\\*.jpg\")",
+      "Bash(dir:*)",
+      "WebFetch(domain:1drv.ms)",
+      "WebFetch(domain:onedrive.live.com)",
+      "WebFetch(domain:api.onedrive.com)",
+      "Bash(powershell.exe -NoProfile -ExecutionPolicy Bypass -File \"C:\\\\ClaudeKotisivut\\\\test_onedrive.ps1\")",
+      "Bash(python3 -c \"\nimport base64, urllib.request, json\nurl = ''https://1drv.ms/f/c/39379318741ed739/IgAC0Ua1K6ZbTojh_4hUwuEEAR5LJkf0Qzwm3NtlWE6r91Q?e=wENrpD''\ntoken = ''u!'' + base64.b64encode\\(url.encode\\(\\)\\).decode\\(\\).rstrip\\(''=''\\).replace\\(''/'',''_''\\).replace\\(''+'',''-''\\)\napi = f''https://api.onedrive.com/v1.0/shares/{token}/root/children?select=id,name,file&expand=thumbnails''\nprint\\(''API URL:'', api[:100], ''...''\\)\nreq = urllib.request.Request\\(api\\)\ntry:\n    resp = urllib.request.urlopen\\(req\\)\n    data = json.loads\\(resp.read\\(\\)\\)\n    print\\(''STATUS: 200 OK''\\)\n    print\\(''Items:'', len\\(data.get\\(''value'',[]\\)\\)\\)\n    for item in data.get\\(''value'',[]\\):\n        print\\(f\"\"  - {item.get\\(''name''\\)} \\(type: {item.get\\(''file'',{}\\).get\\(''mimeType'',''?''\\)}\\)\"\"\\)\nexcept urllib.error.HTTPError as e:\n    print\\(f''STATUS: {e.code}''\\)\n    print\\(e.read\\(\\).decode\\(\\)\\)\n\")",
+      "Bash(node -e:*)"
+    ]
+  }
+}

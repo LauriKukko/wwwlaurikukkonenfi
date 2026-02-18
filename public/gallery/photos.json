@@ -1,0 +1,28 @@
+[
+  { "filename": "ice.jpg", "alt_en": "Photo 1", "alt_fi": "Kuva 1" },
+  {
+    "filename": "sign.jpg",
+    "alt_en": "Photo 2",
+    "alt_fi": "Kuva 2"
+  },
+  {
+    "filename": "Porkkalanniemi3.jpg",
+    "alt_en": "Photo 2",
+    "alt_fi": "Kuva 2"
+  },
+  {
+    "filename": "Porkkalanniemi4.jpg",
+    "alt_en": "Photo 2",
+    "alt_fi": "Kuva 2"
+  },
+  { "filename": "riveratnight2.jpg", "alt_en": "Photo 2", "alt_fi": "Kuva 2" },
+  { "filename": "riveratnight3.jpg", "alt_en": "Photo 2", "alt_fi": "Kuva 2" },
+  { "filename": "gig1.jpg", "alt_en": "Photo 2", "alt_fi": "Kuva 2" },
+  { "filename": "gig2.jpg", "alt_en": "Photo 2", "alt_fi": "Kuva 2" },
+  { "filename": "gig3.jpg", "alt_en": "Photo 2", "alt_fi": "Kuva 2" },
+  { "filename": "Raippaluoto1.jpg", "alt_en": "Photo 2", "alt_fi": "Kuva 2" },
+  { "filename": "Raippaluoto2.jpg", "alt_en": "Photo 2", "alt_fi": "Kuva 2" },
+  { "filename": "Raippaluoto3.jpg", "alt_en": "Photo 2", "alt_fi": "Kuva 2" },
+  { "filename": "groupphoto1.jpg", "alt_en": "Photo 2", "alt_fi": "Kuva 2" },
+  { "filename": "orangecar.jpg", "alt_en": "Photo 2", "alt_fi": "Kuva 2" }
+]
