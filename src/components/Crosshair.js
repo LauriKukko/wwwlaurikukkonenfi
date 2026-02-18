@@ -1,7 +1,17 @@
 import { useEffect } from 'react';
 
+function isTouchDevice() {
+  return (
+    window.matchMedia('(hover: none)').matches ||
+    'ontouchstart' in window ||
+    navigator.maxTouchPoints > 0
+  );
+}
+
 function Crosshair() {
   useEffect(() => {
+    if (isTouchDevice()) return;
+
     const h = document.createElement('div');
     const v = document.createElement('div');
     h.id = 'crosshair-h';

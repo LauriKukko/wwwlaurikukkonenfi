@@ -51,10 +51,10 @@
   box-shadow: 0 0 4px var(--neon-green);
 }
 
-/* Hide crosshair on touch devices */
-@media (hover: none) {
-  #crosshair-h, #crosshair-v { display: none; }
-  *, *::before, *::after { cursor: auto; }
+/* Hide crosshair & restore default cursor on touch / mobile devices */
+@media (hover: none), (pointer: coarse) {
+  #crosshair-h, #crosshair-v { display: none !important; }
+  *, *::before, *::after { cursor: auto !important; }
 }
 
 /* ── Language Toggle ── */
