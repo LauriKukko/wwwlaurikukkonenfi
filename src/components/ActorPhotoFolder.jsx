@@ -15,23 +15,16 @@ import "../styles/ActorPhotos.css";
 // Import the manifest
 import photoManifest from "../images/actor-photos/photos.json";
 
-// Dynamically require all images from the actor-photos folder
-function importAll(r) {
-  const images = {};
-  r.keys().forEach((key) => {
-    // key looks like "./photo1.jpg" — strip the "./"
-    images[key.replace("./", "")] = r(key);
-  });
-  return images;
-}
+// Dynamically import all images from the actor-photos folder (Vite)
+const imageModules = import.meta.glob(
+  "../images/actor-photos/*.{png,jpg,jpeg,webp}",
+  { eager: true, import: "default" },
+);
 
-let imageFiles = {};
-try {
-  imageFiles = importAll(
-    require.context("../images/actor-photos/", false, /\.(png|jpe?g|webp)$/i),
-  );
-} catch (e) {
-  // Folder might be empty during initial setup
+const imageFiles = {};
+for (const [path, src] of Object.entries(imageModules)) {
+  const filename = path.split("/").pop();
+  imageFiles[filename] = src;
 }
 
 function ActorPhotoFolder() {

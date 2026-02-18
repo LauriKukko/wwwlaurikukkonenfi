@@ -26,7 +26,7 @@ function useGallery(lang) {
     async function fetchGallery() {
       try {
         // Fetch the manifest from the public folder
-        const base = process.env.PUBLIC_URL || '';
+        const base = import.meta.env.BASE_URL.replace(/\/$/, '');
         const response = await fetch(`${base}/gallery/photos.json`);
         if (!response.ok) {
           throw new Error(`Failed to load gallery manifest (${response.status})`);
