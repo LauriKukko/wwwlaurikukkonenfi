@@ -1,16 +1,12 @@
 import { useEffect } from 'react';
 
-function isTouchDevice() {
-  return (
-    window.matchMedia('(hover: none)').matches ||
-    'ontouchstart' in window ||
-    navigator.maxTouchPoints > 0
-  );
+function isMobileDevice() {
+  return window.matchMedia('(hover: none) and (pointer: coarse)').matches;
 }
 
 function Crosshair() {
   useEffect(() => {
-    if (isTouchDevice()) return;
+    if (isMobileDevice()) return;
 
     const h = document.createElement('div');
     const v = document.createElement('div');

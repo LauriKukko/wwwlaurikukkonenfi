@@ -51,8 +51,8 @@
   box-shadow: 0 0 4px var(--neon-green);
 }
 
-/* Hide crosshair & restore default cursor on touch / mobile devices */
-@media (hover: none), (pointer: coarse) {
+/* Hide crosshair & restore default cursor on mobile / touch-only devices */
+@media (hover: none) and (pointer: coarse) {
   #crosshair-h, #crosshair-v { display: none !important; }
   *, *::before, *::after { cursor: auto !important; }
 }
