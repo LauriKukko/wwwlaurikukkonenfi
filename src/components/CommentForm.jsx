@@ -46,20 +46,26 @@ function CommentForm({ slug }) {
           });
         }
 
-        const formData = new URLSearchParams();
-        formData.append('fields[name]', name.trim());
-        formData.append('fields[email]', email.trim());
-        formData.append('fields[body]', body.trim());
-        formData.append('fields[slug]', slug);
+        const payload = {
+          fields: {
+            name: name.trim(),
+            email: email.trim(),
+            body: body.trim(),
+            slug,
+          },
+          options: {},
+        };
         if (recaptchaToken) {
-          formData.append('options[reCaptcha][siteKey]', RECAPTCHA_SITE_KEY);
-          formData.append('options[reCaptcha][token]', recaptchaToken);
+          payload.options.reCaptcha = {
+            siteKey: RECAPTCHA_SITE_KEY,
+            token: recaptchaToken,
+          };
         }
 
         const response = await fetch(STATICMAN_URL, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-          body: formData.toString(),
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
         });
 
         if (response.ok) {

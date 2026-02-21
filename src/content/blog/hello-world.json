@@ -3,8 +3,11 @@
   "title": "Hello, World!",
   "date": "2026-02-21",
   "paragraphs": [
-    "Welcome to my blog. This is the first post on my new personal site.",
-    "I built this site with a retro mainframe aesthetic — inspired by IBM z/OS ISPF panels and the Tron universe. The entire site runs on React and is deployed on GitHub Pages.",
-    "I plan to write about technology, acting, photography, and whatever else comes to mind. Stay tuned for more posts!"
+    "Welcome to my room of thoughts. This is the first post on my new personal site.",
+    "I built this site with a retro mainframe aesthetic — inspired by IBM z/OS ISPF panels and the Tron universe. Both of which are somehow magically technical to me.",
+    "I am truly in awe, that these are now done as I have been trying to rebuild my website for 5 years now. In the end it only took couple of nights to get it done. Thanks to technical development of AI, finally I was able to get my website functioning the way I wanted them to function and my own developing skillset was not any kind of barrier to achieve what I was dreaming of my sites could be.",
+    "Stay tuned. This journey is not over and I thought to write about it here as I go. Other things I plan to write about are acting, photography, and whatever else comes to mind. I think I will eventually even publish my poetry here!",
+    "",
+    "One note though. I know that commenting feature is not functional yet. I'll try to implement the solution for that eventually. Therefore, I am not offended if you don't leave comment just now ;)"
   ]
 }

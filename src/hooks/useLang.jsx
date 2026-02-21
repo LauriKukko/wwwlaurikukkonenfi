@@ -7,22 +7,18 @@ const LangContext = createContext();
  * Falls back to 'en' on any error.
  */
 async function detectCountry() {
+  // Try ip2c.org first (lightweight, CORS-friendly)
   try {
-    const res = await fetch('https://ipapi.co/json/', { signal: AbortSignal.timeout(3000) });
+    const res = await fetch('https://ip2c.org/s', { signal: AbortSignal.timeout(3000) });
     if (!res.ok) throw new Error();
-    const data = await res.json();
-    return data.country_code === 'FI' ? 'fi' : 'en';
+    const text = await res.text();
+    // Format: "1;FI;FIN;Finland"
+    const parts = text.split(';');
+    return parts[1] === 'FI' ? 'fi' : 'en';
   } catch {
-    try {
-      const res = await fetch('https://ip2c.org/s', { signal: AbortSignal.timeout(3000) });
-      if (!res.ok) throw new Error();
-      const text = await res.text();
-      // Format: "1;FI;FIN;Finland"
-      const parts = text.split(';');
-      return parts[1] === 'FI' ? 'fi' : 'en';
-    } catch {
-      return 'en';
-    }
+    // Fallback: browser language detection
+    const browserLang = navigator.language || navigator.userLanguage || '';
+    return browserLang.startsWith('fi') ? 'fi' : 'en';
   }
 }
 

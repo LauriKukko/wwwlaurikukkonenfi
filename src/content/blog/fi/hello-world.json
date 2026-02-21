@@ -3,8 +3,11 @@
   "title": "Hei, maailma!",
   "date": "2026-02-21",
   "paragraphs": [
-    "Tervetuloa blogiini. T\u00e4m\u00e4 on ensimm\u00e4inen kirjoitus uusilla henkil\u00f6kohtaisilla sivuillani.",
-    "Rakensin t\u00e4m\u00e4n sivuston retro-mainframe-estetiikalla \u2014 inspiraationa IBM z/OS ISPF-paneelit ja Tron-universumi. Koko sivusto py\u00f6rii Reactilla ja on julkaistu GitHub Pagesissa.",
-    "Aion kirjoittaa teknologiasta, n\u00e4yttelemisest\u00e4, valokuvauksesta ja muista mielen p\u00e4\u00e4ll\u00e4 olevista aiheista. Pysy kuulolla!"
+    "Tervetuloa ajatusteni tilaan. Tämä on ensimmäinen kirjoitus uudella henkilökohtaisella sivustollani.",
+    "Rakensin tämän sivuston retrohenkisellä keskuskone-estetiikalla — inspiraationa IBM z/OS ISPF -paneelit ja Tron-universumi. Molemmat ovat minulle jotenkin taianomaisen teknisiä.",
+    "Olen aidosti ällistynyt, että nämä sivut ovat nyt valmiit, sillä olen yrittänyt rakentaa sivustoni uudelleen jo viiden vuoden ajan. Lopulta sen tekemiseen kului vain muutama ilta. Tekoälyn teknisen kehityksen ansiosta sain vihdoin sivustoni toimimaan tavalla, jolla halusin niiden toimivan, eikä omat kehittäjätaitoni olleet enää este sille, mitä olin unelmoinut sivujeni voivan olla.",
+    "Pysy kuulolla. Tämä matka ei ole ohi, ja ajattelin kirjoittaa siitä tänne matkan varrella. Muita aiheita, joista aion kirjoittaa, ovat näytteleminen, valokuvaus ja kaikki muu, mikä mieleen juolahtaa. Uskon, että julkaisen täällä lopulta jopa runojani!",
+    "",
+    "Yksi huomio kuitenkin. Tiedän, että kommentointiominaisuus ei vielä toimi. Yritän toteuttaa siihen ratkaisun pikapuoliin. Nyt en kuitenkaan loukkaannu, jos et jätä kommenttia ;)"
   ]
 }

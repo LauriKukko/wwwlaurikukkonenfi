@@ -36,7 +36,12 @@
       "Bash(openssl genrsa:*)",
       "Bash(openssl rsa:*)",
       "Bash(gh repo create:*)",
-      "Bash(where:*)"
+      "Bash(where:*)",
+      "Bash(curl:*)",
+      "Bash(PORT=3333 GITHUB_TOKEN=test node:*)",
+      "Bash(PORT=3334 GITHUB_TOKEN=test node:*)",
+      "Bash(git remote add:*)",
+      "Bash(timeout 90 bash -c 'while true; do result=$\\(curl -s -w \"\"|%{http_code}\"\" \"\"https://staticman-laurikukkonen.onrender.com/\"\" 2>/dev/null\\); code=$\\(echo \"\"$result\"\" | rev | cut -d\"\"|\"\" -f1 | rev\\); body=$\\(echo \"\"$result\"\" | rev | cut -d\"\"|\"\" -f2- | rev\\); echo \"\"$\\(date +%H:%M:%S\\) - HTTP $code - $body\"\"; if [ \"\"$code\"\" = \"\"200\"\" ]; then echo \"\"SERVICE IS UP!\"\"; break; fi; sleep 10; done')"
     ]
   }
 }
