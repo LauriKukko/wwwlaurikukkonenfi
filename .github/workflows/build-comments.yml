@@ -1,0 +1,51 @@
+name: Build comment index and deploy
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/comments/**'
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Aggregate comments into index files
+        run: |
+          # For each post slug directory in data/comments/,
+          # combine all JSON files into public/data/comments/{slug}/index.json
+          for dir in data/comments/*/; do
+            [ -d "$dir" ] || continue
+            slug=$(basename "$dir")
+            mkdir -p "public/data/comments/$slug"
+
+            # Collect all JSON comment files, sort by date, output as array
+            node -e "
+              const fs = require('fs');
+              const path = require('path');
+              const dir = 'data/comments/$slug';
+              const files = fs.readdirSync(dir).filter(f => f.endsWith('.json'));
+              const comments = files.map(f => {
+                const data = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'));
+                return { name: data.name, body: data.body, date: data.date };
+              }).sort((a, b) => new Date(a.date) - new Date(b.date));
+              fs.mkdirSync('public/data/comments/$slug', { recursive: true });
+              fs.writeFileSync('public/data/comments/$slug/index.json', JSON.stringify(comments, null, 2));
+            "
+            echo "Built index for $slug ($(ls data/comments/$slug/*.json 2>/dev/null | wc -l) comments)"
+          done
+
+      - name: Commit updated index files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data/comments/
+          git diff --cached --quiet || git commit -m "Rebuild comment indexes"
+          git push

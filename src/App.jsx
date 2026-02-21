@@ -7,6 +7,8 @@ import LandingPage from './components/LandingPage';
 import MainMenu from './components/MainMenu';
 import ContentPageRoute from './components/ContentPageRoute';
 import PhotographyPageRoute from './components/PhotographyPageRoute';
+import BlogPage from './components/BlogPage';
+import BlogPost from './components/BlogPost';
 import KeyboardNavProvider from './components/KeyboardNavProvider';
 
 function AppRoutes() {
@@ -37,6 +39,8 @@ function AppRoutes() {
         <Route path="/it" element={<ContentPageRoute section="it" />} />
         <Route path="/actor" element={<ContentPageRoute section="actor" />} />
         <Route path="/photography" element={<PhotographyPageRoute />} />
+        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/blog/:slug" element={<BlogPost />} />
       </Routes>
     </>
   );

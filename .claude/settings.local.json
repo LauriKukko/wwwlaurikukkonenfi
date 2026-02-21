@@ -18,7 +18,25 @@
       "Bash(npx vite build:*)",
       "Bash(npx vite:*)",
       "Bash(npm info:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git pull:*)",
+      "Bash(git stash:*)",
+      "Bash(npm run deploy:*)",
+      "Bash(git ls-tree:*)",
+      "WebFetch(domain:api.staticman.net)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:staticman.net)",
+      "WebFetch(domain:the.staticman.net)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:render.com)",
+      "Bash(git clone:*)",
+      "Bash(openssl genrsa:*)",
+      "Bash(openssl rsa:*)",
+      "Bash(gh repo create:*)",
+      "Bash(where:*)"
     ]
   }
 }

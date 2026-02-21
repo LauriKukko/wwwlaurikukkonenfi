@@ -2,12 +2,13 @@ import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import ContentPage from './ContentPage';
 import PhotographyPage from './PhotographyPage';
+import BlogPreview from './BlogPreview';
 import { useContent, useUI } from '../hooks/useContent';
 import '../styles/MainMenu.css';
 import '../styles/ContentPage.css';
 
-const MENU_PATHS = ['/about', '/it', '/actor', '/photography'];
-const MENU_IDS = ['about', 'it', 'actor', 'photography'];
+const MENU_PATHS = ['/about', '/it', '/actor', '/photography', '/blog'];
+const MENU_IDS = ['about', 'it', 'actor', 'photography', 'blog'];
 
 function MainMenu() {
   const [commandInput, setCommandInput] = useState('');
@@ -29,7 +30,7 @@ function MainMenu() {
 
   const submitCommand = () => {
     const num = parseInt(commandInput, 10);
-    if (num >= 1 && num <= 4) {
+    if (num >= 1 && num <= MENU_PATHS.length) {
       navigate(MENU_PATHS[num - 1]);
     }
     setCommandInput('');
@@ -103,7 +104,7 @@ function MainMenu() {
               value={commandInput}
               onChange={(e) => setCommandInput(e.target.value)}
               onKeyDown={handleCommandKeyDown}
-              aria-label="Enter option number 1-4"
+              aria-label="Enter option number 1-5"
               autoComplete="off"
             />
           </form>
@@ -125,6 +126,8 @@ function MainMenu() {
           <section id={id}>
             {id === 'photography' ? (
               <PhotographyPage embedded />
+            ) : id === 'blog' ? (
+              <BlogPreview />
             ) : (
               <ContentPage
                 data={sectionData[id]}

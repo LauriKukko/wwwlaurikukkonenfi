@@ -10,6 +10,20 @@ import itSkillsEn from '../content/it-skills.json';
 import itEduEn from '../content/it-education.json';
 import actorAvEn from '../content/actor-av.json';
 import actorTheatreEn from '../content/actor-theatre.json';
+import blogIndexData from '../content/blog-index.json';
+
+// Blog posts (English)
+const blogPostsEn = import.meta.glob('../content/blog/*.json', { eager: true, import: 'default' });
+// Blog posts (Finnish)
+const blogPostsFi = import.meta.glob('../content/blog/fi/*.json', { eager: true, import: 'default' });
+
+function indexPosts(modules) {
+  const posts = {};
+  for (const [, data] of Object.entries(modules)) {
+    if (data && data.slug) posts[data.slug] = data;
+  }
+  return posts;
+}
 
 // Finnish content
 import aboutFi from '../content/fi/aboutme.json';
@@ -35,6 +49,10 @@ const content = {
       it: [itExpEn, itSkillsEn, itEduEn],
       actor: [actorAvEn, actorTheatreEn],
     },
+    blog: {
+      index: blogIndexData.en,
+      posts: indexPosts(blogPostsEn),
+    },
   },
   fi: {
     about: aboutFi,
@@ -44,6 +62,10 @@ const content = {
     tables: {
       it: [itExpFi, itSkillsFi, itEduFi],
       actor: [actorAvFi, actorTheatreFi],
+    },
+    blog: {
+      index: blogIndexData.fi,
+      posts: indexPosts(blogPostsFi),
     },
   },
 };

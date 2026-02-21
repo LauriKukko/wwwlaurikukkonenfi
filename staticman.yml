@@ -1,0 +1,21 @@
+# Staticman configuration
+# https://staticman.net/docs/configuration
+
+comments:
+  allowedFields: ["name", "email", "body", "slug"]
+  branch: "main"
+  commitMessage: "New comment on {options.slug}"
+  filename: "{@timestamp}"
+  format: "json"
+  generatedFields:
+    date:
+      type: date
+  moderation: true
+  path: "data/comments/{options.slug}"
+  requiredFields: ["name", "email", "body"]
+  transforms:
+    email: md5
+  reCaptcha:
+    enabled: true
+    siteKey: "6LfiK3MsAAAAAIqU_QWOHR_N8c5WARPdmsA-WVcN"
+    secret: "yOdd8gvr1YlK4dW8cz7RTm34NQb4YOibnkN0BCIlU9mbQw7hre2iYs1cQYEApVbj/CxK8zfnxaW4VrtPUb77QJI73OMZa2HCd9nas/qV/ySGj+W6KUu6FD6H57fenwmdq0Qe86SDi8nR7qMDsQBC7pmlxw/CU1Mtr6ke7NUrRhmJs0hxyc9ZooJOhR7JkZPWQIjdnuy2ANqqa67/gF8RvNZuS38PES38Qod6shKPgyZfBfASai0xUaXMleOyW5jREcac5TAlirsyuEHDmxLst8SDJTrMVUPnH4uavzx8j86PpyY7cPIU0Y1PA/mn971V6CNkB/uGhazkexvygNI9hw=="

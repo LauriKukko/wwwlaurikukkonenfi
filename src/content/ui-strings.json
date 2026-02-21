@@ -15,8 +15,8 @@
       "heading": "LAURI KUKKONEN \u2014 MAIN MENU",
       "subheading": "Select one of the following options:",
       "commandLabel": "Command ===>",
-      "footer": "Enter a number (1-4) or click an option above.",
-      "items": ["About Me", "IT Career", "Actor", "Photography"]
+      "footer": "Enter a number (1-5) or click an option above.",
+      "items": ["About Me", "IT Career", "Actor", "Photography", "Blog"]
     },
     "content": {
       "sectionPrefix": "SECTION",
@@ -24,6 +24,33 @@
       "galleryLabel": "PHOTO GALLERY",
       "loadingFeed": "Loading gallery...",
       "feedError": "Could not load gallery:"
+    },
+    "blog": {
+      "title": "BLOG",
+      "titleBar": "SECTION \u2014 BLOG",
+      "noPosts": "No posts yet. Check back later.",
+      "readMore": "READ >",
+      "backToBlog": "< BACK TO BLOG",
+      "backToMenu": "< RETURN TO MAIN MENU",
+      "comments": "COMMENTS",
+      "noComments": "No comments yet. Be the first to comment!",
+      "commentForm": {
+        "heading": "LEAVE A COMMENT",
+        "name": "Name",
+        "namePlaceholder": "Your name",
+        "email": "Email",
+        "emailPlaceholder": "your@email.com",
+        "body": "Comment",
+        "bodyPlaceholder": "Write your comment here...",
+        "submit": "SUBMIT",
+        "sending": "TRANSMITTING...",
+        "success": "Comment transmitted successfully! It will appear after moderation.",
+        "error": "Transmission failed. Please try again.",
+        "instructions": "COMMENT INSTRUCTIONS",
+        "captchaNote": "This form is protected by reCAPTCHA to prevent automated spam. Verification happens automatically in the background.",
+        "emailNote": "An email address is required for comment moderation purposes only. It allows the site owner to contact you if needed and enables automatic approval of future comments.",
+        "privacyNote": "Your email address will NEVER be displayed publicly on this site. It is stored securely in the repository metadata and is only visible to the site administrator."
+      }
     }
   },
   "fi": {
@@ -35,15 +62,15 @@
       "easterEggP1": "Onnittelut, operaattori. Olet ohittanut vakioprotokollat ja p\u00e4\u00e4ssyt rajoitetulle kanavalle.",
       "easterEggP2": "Sinut on nyt vihitty mainframen mysteereihin. Harvat ovat l\u00f6yt\u00e4neet t\u00e4m\u00e4n polun. J\u00e4rjestelm\u00e4 tunnustaa uteliaisuutesi.",
       "easterEggP3": "Tervetuloa sis\u00e4iseen verkkoon. Neon virtaa sinussa nyt.",
-      "easterEggContinue": "Paina CTRL uudelleen siirtyäksesi päävalikkoon >"
+      "easterEggContinue": "Paina CTRL uudelleen siirty\u00e4ksesi p\u00e4\u00e4valikkoon >"
     },
     "menu": {
       "titleBar": "ISPF P\u00c4\u00c4VALIKKO",
       "heading": "LAURI KUKKONEN \u2014 P\u00c4\u00c4VALIKKO",
       "subheading": "Valitse yksi seuraavista vaihtoehdoista:",
       "commandLabel": "Komento ===>",
-      "footer": "Sy\u00f6t\u00e4 numero (1-4) tai klikkaa vaihtoehtoa yll\u00e4.",
-      "items": ["Tietoa minusta", "IT-ura", "N\u00e4yttelij\u00e4", "Valokuvaus"]
+      "footer": "Sy\u00f6t\u00e4 numero (1-5) tai klikkaa vaihtoehtoa yll\u00e4.",
+      "items": ["Tietoa minusta", "IT-ura", "N\u00e4yttelij\u00e4", "Valokuvaus", "Blogi"]
     },
     "content": {
       "sectionPrefix": "OSIO",
@@ -51,6 +78,33 @@
       "galleryLabel": "VALOKUVAGALLERIA",
       "loadingFeed": "Ladataan galleriaa...",
       "feedError": "Gallerian lataus ep\u00e4onnistui:"
+    },
+    "blog": {
+      "title": "BLOGI",
+      "titleBar": "OSIO \u2014 BLOGI",
+      "noPosts": "Ei viel\u00e4 kirjoituksia. Tarkista my\u00f6hemmin.",
+      "readMore": "LUE >",
+      "backToBlog": "< TAKAISIN BLOGIIN",
+      "backToMenu": "< TAKAISIN P\u00c4\u00c4VALIKKOON",
+      "comments": "KOMMENTIT",
+      "noComments": "Ei viel\u00e4 kommentteja. Ole ensimm\u00e4inen kommentoija!",
+      "commentForm": {
+        "heading": "J\u00c4T\u00c4 KOMMENTTI",
+        "name": "Nimi",
+        "namePlaceholder": "Nimesi",
+        "email": "S\u00e4hk\u00f6posti",
+        "emailPlaceholder": "sinun@sahkoposti.fi",
+        "body": "Kommentti",
+        "bodyPlaceholder": "Kirjoita kommenttisi t\u00e4h\u00e4n...",
+        "submit": "L\u00c4HET\u00c4",
+        "sending": "L\u00c4HETET\u00c4\u00c4N...",
+        "success": "Kommentti l\u00e4hetetty onnistuneesti! Se n\u00e4kyy moderoinnin j\u00e4lkeen.",
+        "error": "L\u00e4hetys ep\u00e4onnistui. Yrit\u00e4 uudelleen.",
+        "instructions": "KOMMENTOINTIOHJEET",
+        "captchaNote": "T\u00e4m\u00e4 lomake on suojattu reCAPTCHA-palvelulla automaattisen roskapostin est\u00e4miseksi. Varmennus tapahtuu automaattisesti taustalla.",
+        "emailNote": "S\u00e4hk\u00f6postiosoite vaaditaan ainoastaan kommenttien moderointia varten. Sen avulla sivuston yll\u00e4pit\u00e4j\u00e4 voi ottaa sinuun yhteytt\u00e4 tarvittaessa ja se mahdollistaa tulevien kommenttien automaattisen hyv\u00e4ksynn\u00e4n.",
+        "privacyNote": "S\u00e4hk\u00f6postiosoitettasi EI koskaan n\u00e4ytet\u00e4 julkisesti t\u00e4ll\u00e4 sivustolla. Se tallennetaan turvallisesti ja on n\u00e4kyviss\u00e4 ainoastaan sivuston yll\u00e4pit\u00e4j\u00e4lle."
+      }
     }
   }
 }

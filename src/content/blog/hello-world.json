@@ -1,0 +1,10 @@
+{
+  "slug": "hello-world",
+  "title": "Hello, World!",
+  "date": "2026-02-21",
+  "paragraphs": [
+    "Welcome to my blog. This is the first post on my new personal site.",
+    "I built this site with a retro mainframe aesthetic — inspired by IBM z/OS ISPF panels and the Tron universe. The entire site runs on React and is deployed on GitHub Pages.",
+    "I plan to write about technology, acting, photography, and whatever else comes to mind. Stay tuned for more posts!"
+  ]
+}
