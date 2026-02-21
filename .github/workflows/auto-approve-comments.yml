@@ -13,8 +13,8 @@ permissions:
 jobs:
   auto-approve:
     runs-on: ubuntu-latest
-    # Only run for PRs created by staticman bot
-    if: contains(github.event.pull_request.user.login, 'staticmanapp') || contains(github.event.pull_request.user.login, 'staticman-bot')
+    # Only run for PRs that modify comment files
+    if: contains(github.event.pull_request.title, 'comment')
 
     steps:
       - name: Checkout repository
